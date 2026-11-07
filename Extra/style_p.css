@@ -1,0 +1,251 @@
+:root {
+    --primary-color: #17365d;
+    --primary-hover: #102a4c;
+    --dark-text: #1e293b;
+    --light-bg: #f0f4f8; /* Unique soft light background */
+    --bs-primary: #17365d;
+    --bs-primary-rgb: 23, 54, 93;
+    --bs-link-color: #17365d;
+    --bs-link-hover-color: #2563eb;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    overflow-x: hidden;
+}
+
+/* Dashboard background */
+body.dashboard-body {
+    background-color: var(--light-bg) !important;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff !important;
+    padding: 15px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--dark-text);
+}
+
+.navbar-brand img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+    color: #475569;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Navbar Buttons */
+.btn-nav-login {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    padding: 6px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.btn-nav-login:hover {
+    background-color: rgba(23, 54, 93, 0.05);
+    color: var(--primary-color);
+}
+
+.btn-nav-register {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 6px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border: none;
+}
+
+.btn-nav-register:hover {
+    background-color: var(--primary-hover);
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 70px 0;
+    background-color: transparent;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.05rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Hero Buttons */
+.btn-hero-primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 12px 24px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-hero-primary:hover {
+    background-color: var(--primary-hover);
+    color: #ffffff;
+}
+
+.btn-hero-outline {
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    padding: 12px 24px;
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.btn-hero-outline:hover {
+    border-color: #94a3b8;
+    color: #0f172a;
+}
+
+/* Image Wrapper with Floating Badges */
+.hero-image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.hero-main-img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Floating SCHOOL Badges */
+.school-badge-top,
+.school-badge-bottom {
+    position: absolute;
+    right: 20px;
+    background: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1e293b;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.school-badge-top { top: 20px; }
+.school-badge-bottom { bottom: 20px; }
+
+.school-badge-top span,
+.school-badge-bottom span {
+    width: 8px;
+    height: 8px;
+    background-color: #f59e0b;
+    border-radius: 50%;
+}
+
+/* Card & Form Styling for Dashboard, Login & Register */
+.card {
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+    border-radius: 12px !important;
+    background-color: #ffffff;
+}
+
+.form-control {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(23, 54, 93, 0.15);
+}
+
+.form-label {
+    font-weight: 500;
+    color: #1e293b;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+}
+
+/* Table Styling */
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    font-weight: 600;
+    color: #475569;
+    background-color: #f8fafc !important;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.table td {
+    color: #334155;
+    vertical-align: middle;
+    padding: 12px 15px;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+}
